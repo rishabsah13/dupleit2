@@ -17,7 +17,7 @@ export default function Weatherstack()
     country: "",
   });
   const handleClick = () => {
-    fetch(`http://api.weatherstack.com/current?access_key=bb17532f207fd3fdfefd8630a6afc3a2&query=${city}`)
+    fetch(`https://api.weatherstack.com/current?access_key=bb17532f207fd3fdfefd8630a6afc3a2&query=${city}`)
       .then(response=>response.json())
       .then(data=>{
         console.log(data);
